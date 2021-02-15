@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      html,
+      body {
+        margin: 0;
+        background-image: url('https://wallpapertip.com/wmimgs/25-250584_person-typing-on-computer.jpg');
+        height: 100%;
+        background-size: cover;
+        text-align: center;
+      }
+      img {
+        width: 50vh;
+      }
+      #person {
+        pointer-events: none;
+        transform: translateX(-18vw);
+        width: 100%;
+        height: auto;
+        z-index: 1;
+      }
+      p {
+        padding-top: 4vh;
+        font-weight: 600;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        line-height: 5vh;
+        color: rgb(23, 23, 133);
+        font-size: 1.5vw;
+        margin: 0 auto;
+        text-align: center;
+        width: 80%;
+      }
+      #btns {
+        border: none;
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        bottom: 4vh;
+        background-color: rgb(190, 82, 42);
+        color: white;
+        cursor: pointer;
+        font-size: 1vw;
+        border-radius: 2rem;
+        padding: 12px;
+        outline: none;
+      }
+      #btns:hover {
+        background-color: rgb(255, 72, 0);
+      }
+      .flex {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .main {
+        position: absolute;
+        background-color: white;
+        height: 35vh;
+        border: 1px solid rgb(167, 165, 165);
+        border-radius: 1rem;
+        box-shadow: 0px 0px 20px 0px rgb(167, 165, 165) inset;
+        width: 35vw;
+      }
+    </style>
+    <title>Typing Speed Test</title>
+  </head>
+  <body>
+    <div class="flex">
+      <div id="person"><img src="character.png" /></div>
+      <div class="main">
+        <p>
+          Welcome to #1 Online typing speed test portal with over 5 million
+          tests completed every month!!!
+        </p>
+        <a href="main.html"><button id="btns">Start Typing Test</button></a>
+      </div>
+    </div>
+  </body>
+</html>

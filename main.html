@@ -1,0 +1,62 @@
+<html lang="en">
+  <head>
+    <title>Simple Speed Typer</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="heading">
+        <svg>
+          <symbol id="s-text">
+            <text text-anchor="middle" x="50%" y="80%">
+              Test your typing speed
+            </text>
+          </symbol>
+
+          <g class="g-ants">
+            <use xlink:href="#s-text" class="text-copy"></use>
+            <use xlink:href="#s-text" class="text-copy"></use>
+            <use xlink:href="#s-text" class="text-copy"></use>
+            <use xlink:href="#s-text" class="text-copy"></use>
+            <use xlink:href="#s-text" class="text-copy"></use>
+          </g>
+        </svg>
+      </div>
+      <div class="header">
+        <div class="wpm">
+          <div class="header_text">WPM</div>
+          <div class="curr_wpm">100</div>
+        </div>
+        <div class="errors">
+          <div class="header_text">Errors</div>
+          <div class="curr_errors">0</div>
+        </div>
+        <div class="timer">
+          <div class="header_text">Time</div>
+          <div class="curr_time">60s</div>
+        </div>
+        <div class="accuracy">
+          <div class="header_text">% Accuracy</div>
+          <div class="curr_accuracy">100</div>
+        </div>
+      </div>
+      <div class="words">Click below to start the test <span>&#128071</span></div>
+      <textarea
+        class="input_area"
+        placeholder="start typing here..."
+        oninput="processCurrentText()"
+        onfocus="startGame()"
+      ></textarea>
+      <button class="restart_btn" onclick="resetValues()">Restart</button>
+    </div>
+    <script>
+      window.onbeforeunload = function () {
+        window.setTimeout(function () {
+          window.location = 'index.html';
+        }, 0);
+        window.onbeforeunload = null;
+      };
+    </script>
+    <script src="script.js"></script>
+  </body>
+</html>

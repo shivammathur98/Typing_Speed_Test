@@ -1,0 +1,125 @@
+body {
+  background-image: url('https://cssauthor.com/wp-content/uploads/2015/10/Old-painted-wood.jpg');
+}
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+svg {
+  margin-top: -2.5em;
+  font: 4em 'Montserrat';
+  width: 15em;
+  height: 4.5em;
+}
+.text-copy {
+  fill: none;
+  stroke: white;
+  stroke-dasharray: 6% 29%;
+  stroke-width: 5px;
+  stroke-dashoffset: 0%;
+  animation: stroke-offset 5.5s infinite linear;
+}
+.text-copy:nth-child(1) {
+  stroke: #4d163d;
+  animation-delay: -1;
+}
+.text-copy:nth-child(2) {
+  stroke: #840037;
+  animation-delay: -2s;
+}
+.text-copy:nth-child(3) {
+  stroke: #bd0034;
+  animation-delay: -3s;
+}
+.text-copy:nth-child(4) {
+  stroke: #bd0034;
+  animation-delay: -4s;
+}
+.text-copy:nth-child(5) {
+  stroke: #fdb731;
+  animation-delay: -5s;
+}
+@keyframes stroke-offset {
+  100% {
+    stroke-dashoffset: -35%;
+  }
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.end {
+  color: red;
+}
+.header {
+  display: flex;
+  align-items: center;
+}
+.timer,
+.errors,
+.accuracy,
+.wpm {
+  background-image: url('https://cssauthor.com/wp-content/uploads/2019/10/Free-Wooden-Floor-Textures.jpg');
+  text-align: center;
+  height: 60px;
+  width: 70px;
+  margin: 8px;
+  color: white;
+  padding: 12px;
+  border-radius: 50%;
+}
+.wpm {
+  display: none;
+}
+.header_text {
+  text-transform: uppercase;
+  font-size: 0.6rem;
+  font-weight: 500;
+}
+.curr_time,
+.curr_errors,
+.curr_accuracy,
+.curr_wpm {
+  font-size: 2.4rem;
+}
+.words {
+  font-size: 1.5rem;
+  margin: 10px;
+  border-radius: 10em;
+  padding: 25px;
+  box-shadow: rgb(136, 136, 136) 0px 2px 10px 7px;
+}
+.input_area {
+  background-image: url('https://www.photoshopsupply.com/wp-content/uploads/2019/07/wood-floor-texture-3.jpg');
+  height: 20vh;
+  width: 40vw;
+  overflow: hidden;
+  resize: none;
+  border: 0px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 15px;
+  padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  box-shadow: black 0px 10px 10px 3px;
+}
+.incorrect_char {
+  color: red;
+}
+.correct_char {
+  color: green;
+}
+.restart_btn {
+  display: none;
+  cursor: pointer;
+  height: 3.5rem;
+  width: 3.5rem;
+  margin-top: 2vh;
+  background-color: rgb(216, 46, 46);
+  border: 0px;
+  border-radius: 50%;
+  outline: none;
+  color: white;
+  box-shadow: rgb(82, 82, 82) 0px 5px 10px 2px;
+}
+.restart_btn:hover {
+  background-color: red;
+}
